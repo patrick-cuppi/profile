@@ -6,16 +6,31 @@
 }
 
 .header-container {
-  font-size: 1.5em;
-  text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
   padding-top: 1em;
   padding-bottom: 2em;
   margin-bottom: 1em;
   background: linear-gradient(45deg, lightgrey, white);
-  box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);;
+  box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.75);
+}
+
+.header-name {
+  font-size: 3em;
+  transform: translateX(40%);
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.header-description {
+  font-size: 1.5em;
+  transform: translateX(50%);
+  font-family: "Workbench", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
 }
 
 .article-container{
@@ -85,47 +100,44 @@
   padding-bottom: 2em;
 }
 
-/* .dancing-script-<uniquifier> {
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
+.footer-container{
+  padding-top: 2em;
+  padding-bottom: 1em;
+  background: linear-gradient(45deg, white, lightgrey);
+  box-shadow: 0px -7px 5px 0px rgba(0,0,0,0.75);
+}
 
-  .honk-<uniquifier> {
-    font-family: "Honk", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "MORF" 15,
-      "SHLN" 50;
-  }
+.footer-phrase{
+  font-size: 2em;
+  text-align: right;
+  margin-right: 1em;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+}
 
-  .open-sans-<uniquifier> {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
+.footer-author {
+  font-size: 2em;
+  text-align: right;
+  margin-right: 1em;
+  font-family: "Workbench", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 0,
+    "SCAN" 0;
+  padding-bottom: 1.5em;
+}
 
-  .playfair-display-<uniquifier> {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
-
-  
-  .workbench-<uniquifier> {
-    font-family: "Workbench", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "BLED" 0,
-      "SCAN" 0;
-  } */
-
+.footer-developer {
+  text-align: center;
+  font-size: 2.2em;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    padding-bottom: 1em;
+}
