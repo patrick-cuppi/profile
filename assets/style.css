@@ -1,12 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Honk&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Workbench&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Honk&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Workbench&display=swap');
 
 * {
     margin: 0;
     padding: 0;
 }
 
-.header-container {
-  padding-top: 1em;
+.nav-container {
+  background: #000;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+#header-container {
+  width: 100%;
+  padding-top: 3em;
   padding-bottom: 2em;
   margin-bottom: 1em;
   background: linear-gradient(45deg, lightgrey, white);
@@ -33,7 +41,7 @@
     "SCAN" 0;
 }
 
-.article-container{
+#article-container{
     background-image: url(https://cdn.pixabay.com/photo/2023/10/27/14/28/alps-8345488_1280.jpg);
     width: 100%;
     max-width: 60em;
@@ -76,13 +84,10 @@
     border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-/* .astronomic-container div {
-  max-width: 80vw;
-} */
-
-.photoOfDay {
+.nasa-api {
   text-align: center;
-  font-size: 2em;
+  font-size: 4em;    
+  padding-top: 1em;
   font-family: "Workbench", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -92,7 +97,19 @@
     "SCAN" 0;
 }
 
-.card-nasa {
+.titleOfDay {
+  padding: 1em;
+  text-align: center;
+}
+
+.explanationOfDay {
+  text-align: justify;
+  max-width: 70vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.nasa-card {
   max-width: auto;
   max-height: auto;
   text-align: center;
@@ -101,6 +118,7 @@
 }
 
 .footer-container{
+  width: 100%;
   padding-top: 2em;
   padding-bottom: 1em;
   background: linear-gradient(45deg, white, lightgrey);
@@ -126,7 +144,13 @@
   font-variation-settings:
     "BLED" 0,
     "SCAN" 0;
-  padding-bottom: 1.5em;
+}
+
+#alert-container {
+  padding: 0.5em;
+  text-align: center;
+  margin-left: 50vw;
+  transform: translateX(-50%);
 }
 
 .footer-developer {
@@ -139,5 +163,5 @@
   font-variation-settings:
     "MORF" 15,
     "SHLN" 50;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 }

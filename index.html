@@ -3,31 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Patrick Cuppi | Fullstack Developer</title>
 </head>
 <body>
-    <header class="header-container">
+    <nav class="nav-container">
+        <ul class="nav nav-pills justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" href="#header-container">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#article-container">Quem sou</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#astronomic-container">NASA API</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#alert-container">Contato</a>
+            </li>
+          </ul>
+    </nav>
+
+    <header id="header-container">
         <h1 class="header-name">Patrick Cuppi</h1>
         <h3 class="header-description">{fullstack developer}</h3>
     </header>
 
-    <nav>
-
-    </nav>
-
     <main>
-        <article class="article-container">
-            <!-- <img src="./images/alps-8345488_1280.jpg" alt="Alpes-Montanhas-Natureza-Panorama, por @cm_ronaldo em pixabay" class="article-contaneir"> -->
+        <article id="article-container">
             <figure>
-                <img src="./images/perfil_ia.jpeg" alt="Imagem do rosto com efeitos feitos por Inteligência Artificial" class="image-ia">
+                <img src="./assets/images/perfil_ia.jpeg" alt="Imagem do rosto com efeitos feitos por Inteligência Artificial" class="image-ia">
             </figure>
             <p class="description">
                 Prazer, meu nome é Patrick Cuppi. Sou formado em Engenharia de Produção pela Universidade Metodista de Piracicaba (UNIMEP). 
                 Curso atualmente uma Especialização pela Universidade Estadual de Campinas (UNICAMP) em Engenharia de Software.
                 Meus primeiros passos na área de programação foram durante o primeiro semestre da faculdade de Engenharia de Produção na 
                 disciplina de Lógica de Programação. Desde então venho aprendendo e me aperfeiçoando no desenvolvimento de sites e sistemas.
-                Tenho alguns sites desenvolvidos para empresas e participei do processo de desenvolvimento de um sistema ERP para uma empresa de 
+                Tenho alguns sites desenvolvidos para pequenas empresas e participei do processo de desenvolvimento de um sistema ERP para uma empresa de 
                 rebobinamento de motor.
                 Já trabalhei com metodologias ágeis e gerenciei durante alguns anos uma pequena equipe na solução de problemas e desenvolvimento
                 de novos processos.
@@ -35,19 +48,35 @@
                 Adoro Astronomia e Engenharia Aeroespacial, talvez seja por isso que sou tão fã de Star Wars.
             </p>
         </article>
-        <section class="astronomic-container">
-            <div class="photoOfDay card-nasa">
-                <h2>{NASA APIs}</h2>
+        <section id="astronomic-container">
+
+            <h2 class="nasa-api">{NASA APIs}</h2>
+
+            <div class="titleOfDay">
+                <!-- Título da API -->
             </div>
+            <div class="explanationOfDay">
+                <!-- Explicação da API -->
+            </div>
+            <div class="photoOfDay nasa-card">
+                <!-- Foto da API -->
+            </div>
+
         </section>
 
     </main>
 
     <footer class="footer-container">
         <p class="footer-phrase">“Há apenas uma maneira de evitar críticas: não fazer, não falar e não ser nada.”</p><p class="footer-author">Aristóteles</p>
+        <button id="alert-container" class="btn btn-success" type="button">Contate-me</button>
         <p class="footer-developer">Desenvolvido por Patrick Cuppi | 2024</p>
     </footer>
 
-    <script src="./nasa-api.js"></script>
+    <script src="./scripts/nasa-api.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 </html>
