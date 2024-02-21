@@ -41,7 +41,7 @@
     "SCAN" 0;
 }
 
-#article-container{
+#article-container {
     background-image: url(https://cdn.pixabay.com/photo/2023/10/27/14/28/alps-8345488_1280.jpg);
     width: 100%;
     max-width: 60em;
@@ -117,7 +117,80 @@
   padding-bottom: 2em;
 }
 
-.footer-container{
+.text-nasa-api-astronaut {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFF;
+  background-color: #000;
+  font-size: 3em;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.image-ia-astronaut {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  max-width: 20%;
+  padding-bottom: 2em;
+}
+
+.text-nasa-api-personal {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFF;
+  background-color: #000;
+  font-size: 3em;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+h5 {
+  background-color: #000;
+}
+
+.description-carousel {
+  background-color: #000;
+}
+
+#carouselExampleIndicators {
+  max-width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+}
+
+.stacks-container {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description-stacks-container {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #FFF;
+  background-color: #000;
+  font-size: 3em;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.footer-container {
   width: 100%;
   padding-top: 2em;
   padding-bottom: 1em;
