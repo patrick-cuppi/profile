@@ -172,7 +172,7 @@ h5 {
   padding-bottom: 2em;
 }
 
-.stacks-container {
+#stacks-container {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -206,6 +206,22 @@ h5 {
 
 .stack {
   padding: 0.3em;
+}
+
+#github-container {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em;
+  margin-bottom: 3em;
+  border-radius: 8px;
+  background: linear-gradient(45deg, rgb(85, 3, 132), rgb(0, 24, 208));
+}
+
+.image-github-container {
+  max-width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .footer-container {
